@@ -1,8 +1,6 @@
-# seproject-team-template
+# ChefsForPeace
 
-A template repository with wiki for a team project at JCE's software engineering course
-
-![project logo (this one is taken from basecamp)](http://klipfolio.com/sites/default/files/integrations/basecamp.png)
+![project logo (this one is taken from basecamp)](http://2.bp.blogspot.com/-Xb-HZReV1no/T93-0EpseEI/AAAAAAAARD0/upC-4aqt-9c/s1600/Chefs+for+peace.png)
 
 ## Please visit our [live application](https://demo.reactstarterkit.com/)
 - Alright, currently only a landing page...
