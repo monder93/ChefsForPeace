@@ -2,10 +2,14 @@
 
 ![project logo (this one is taken from basecamp)](http://2.bp.blogspot.com/-Xb-HZReV1no/T93-0EpseEI/AAAAAAAARD0/upC-4aqt-9c/s1600/Chefs+for+peace.png)
 
-## Please visit our [live application](https://demo.reactstarterkit.com/)
-- Alright, currently only a landing page...
+#About The Project:
 
-[![Join the chat at https://gitter.im/robi-y/seproject-team-template](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/robi-y/seproject-team-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+ChefsForPeace is a web application that provides a quick and easy comunication between chefs in the association and the audiences.
+The project's goal is to create a shared space and to promote joint community concept.
+
+This project belongs to  Azrieli College of Engineering-Jerusalem -Course "Software Engineering"
+
+[![Join the chat at https://gitter.im/robi-y/seproject-team-template](http://www.velaro.com/wp-content/uploads/2014/03/livechat1.jpg)](https://gitter.im/monder93/ChefsForPeace)
 
 ## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
 
