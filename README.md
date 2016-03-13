@@ -9,7 +9,7 @@ The project's goal is to create a shared space and to promote joint community co
 
 This project belongs to  Azrieli College of Engineering-Jerusalem -Course "Software Engineering"
 
-[![Visit our Site](http://forexreviewjournal.com/wp-content/uploads/21.jpg)](https://gitter.im/monder93/ChefsForPeace)
+[![Visit our Site](http://www.yogaswings.com/wp-content/uploads/2014/03/visit-our-website-button.jpg)](https://demo.reactstarterkit.com/)
 [![Join the chat at https://gitter.im/robi-y/seproject-team-template](http://www.velaro.com/wp-content/uploads/2014/03/livechat1.jpg)](https://gitter.im/monder93/ChefsForPeace)
 
 ## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
