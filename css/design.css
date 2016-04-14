@@ -1,16 +1,47 @@
-body
-{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
-background: #b3dced; /* Old browsers */
-background: -moz-linear-gradient(top,  #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+
+body .custom-container {
+    background: #EBF7EB;
 }
+
 
 #header_image {
 	width: 100%;
-	text-align: middle;
-	min-height: 150px;
-	max-height: 500px;
+	padding: 0px 0px 5px 0px;
+	max-height: 314px;
+}
+
+.navbar-custom {
+    background-color:#E4F7E4;
+    color:#368536;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#368536;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #000000;
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+
+#welcome_photo {
+	height: 120%;
+	width: 120%;
+	margin-left: auto;
+    margin-right: auto
+}
+
+
+
+#welcome_slogan {
+	text-align: center;
+	font-family: cursive;
+}
+
+#welcome_slogan h1 {
+	color: #304530;
 }
