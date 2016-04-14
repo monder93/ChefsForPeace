@@ -9,7 +9,8 @@ body .custom-container {
 
 }
 
-.custom-container h1 {
+.custom-container h1, .custom-container h2{
+	margin: 0px;
 	color: #304530;
 	font-family: cursive;
 }
@@ -72,11 +73,13 @@ body .custom-container {
 
 
 
-#newsletter {
+#newsletter, #newsletter input, #newsletter button {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
-span.glyphicon-envelope {
-    font-size: 5em;
+#newsletter input {
+	width: 	500px;
 }
