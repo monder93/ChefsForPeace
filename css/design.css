@@ -1,8 +1,17 @@
 
 body .custom-container {
     background: #EBF7EB;
+    margin: 15px 5px;
+    padding: 5px;
+    border: 1px solid #A8B5AE;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    font-family: cursive;
+
 }
 
+.custom-container h1 {
+	color: #304530;
+}
 
 #header_image {
 	width: 100%;
@@ -39,9 +48,11 @@ body .custom-container {
 
 #welcome_slogan {
 	text-align: center;
-	font-family: cursive;
+	
 }
 
-#welcome_slogan h1 {
-	color: #304530;
+
+
+#newsletter {
+	text-align: center;
 }
