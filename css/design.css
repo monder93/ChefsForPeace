@@ -11,7 +11,7 @@ body .custom-container {
 
 .custom-container h1 {
 	color: #304530;
-	 font-family: cursive;
+	font-family: cursive;
 }
 
 
@@ -43,18 +43,31 @@ body .custom-container {
     color:#eeeeee;
 }
 
+/*
+	welcome_photo height and width should be modified according 
+	to image's original size.
+*/
 #welcome_photo {
-	height: 120%;
-	width: 120%;
+	height: 100%;
+	width: 100%;
 	margin-left: auto;
     margin-right: auto
 }
 
-
-
 #welcome_slogan {
 	text-align: center;
 	
+}
+
+/*
+	welcome_photo height and width should be modified according 
+	to image's original size.
+*/
+#about_photo {
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
