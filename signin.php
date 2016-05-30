@@ -1,6 +1,5 @@
 <?php
-session_start();//session starts here
-
+include_once 'common.php';
 ?>
 
 
@@ -13,7 +12,7 @@ session_start();//session starts here
 </head>
 <style>
     .login-panel {
-        margin-top: 150px;
+        margin-top: 75px;
 
 </style>
 
@@ -25,16 +24,16 @@ session_start();//session starts here
         <div class="col-md-4 col-md-offset-4">
             <div class="login-panel panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Sign In</h3>
+                    <h3 class="panel-title"><?php echo $lang['MENU_LOGIN']; ?></h3>
                 </div>
                 <div class="panel-body">
                     <form role="form" method="post" action="do_signin.php"  name="theForm" >
                         <fieldset>
                             <div class="form-group"  >
-                                <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus required>
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_EMAIL']; ?>"  name="email" type="email" autofocus required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="pass" type="password" value="" required >
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_PASSWORD'] ?>" name="pass" type="password" value="" required >
  <!-- for using angular                                <p class="help=block" ng-show="theForm.pass.$error.required">this field is reqired </p>  -->
                             </div>
 
