@@ -24,14 +24,14 @@ exit();
     
         if(mysqli_num_rows($run))
     {
-        echo "<script>window.open('home.php','_self')</script>";
+        echo "<script>window.open('success.php','_self')</script>";
 
         $_SESSION['email']=$user_email;//here session is used and value of $user_email store in $_SESSION.
 
     }
     else
     {
-        echo "<script>window.open('index.php','_self')</script>";
+        echo "<script>window.open('fail.php','_self')</script>";
         echo "<script>alert('Email or password is incorrect!')</script>";
 
 exit();

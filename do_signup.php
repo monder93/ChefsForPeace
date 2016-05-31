@@ -59,7 +59,7 @@ exit();
        if(mysqli_num_rows($run_query)>0)  // if result>0 then there is email registered and cant register again 
     {
     echo "<script>alert('Email $Email is already exist in our database, Please try another one!')</script>";
-            echo"<script>window.open('index.php','_self')</script>";
+            echo"<script>window.open('fail.php','_self')</script>";
 exit();
     }
 }
@@ -70,7 +70,7 @@ exit();
     {
         $message = "Registration Successfull";
         echo "<script type='text/javascript'>alert('$message');</script>";
-        echo"<script>window.open('index.php','_self')</script>";
+        echo"<script>window.open('view_users.php','_self')</script>";
 
     }
 
