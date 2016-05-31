@@ -14,26 +14,29 @@ app.controller('submitCtr',['$scope',function($scope){
 
 app.config(function($routeProvider){$routeProvider
 .when('/', {
-    templateUrl: "home.html"})
+    templateUrl: "home.php"})
 	
 .when('/about', {
     templateUrl: "about.html"})
 	
 .when('/contact', {
-    templateUrl: "contact.html"})
+    templateUrl: "contact.php"})
 	
 .when('/gallery', {
     templateUrl: "gallery.html"})
 	
 .when('/signin', {
-    templateUrl: "signin.html"})
+    templateUrl: "signin.php"})
 
-.when('/signup', {
-    templateUrl: "signup.html"})	
+.when('/registration', {
+    templateUrl: "registration.php"})	
 
 .when('/events', {
     templateUrl: "events.html"})	
 .otherwise({
-    templateUrl: "home.html"})
+    templateUrl: "home.php"})
 	
 });
+
+
+    

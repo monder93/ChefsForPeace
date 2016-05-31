@@ -27,23 +27,23 @@ include_once 'common.php';
                         <fieldset>
     <! --------firstname ---- -->
                             <div class="form-group">
-                                <input class="form-control" placeholder="<?php echo $lang['INFO_NAME']; ?>" name="firstname" type="text" autofocus>
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_NAME']; ?>" name="firstname" type="text" autofocus required>
                             </div>
     <! --------lastname ------ -->
                             <div class="form-group">
-                                <input class="form-control" placeholder="<?php echo $lang['INFO_LAST_NAME']; ?>" name="lastname" type="text" autofocus>
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_LAST_NAME']; ?>" name="lastname" type="text" autofocus required>
                             </div>
     <! --------email ------ -->
                             <div class="form-group">
-                                <input class="form-control" placeholder="<?php echo $lang['INFO_EMAIL']; ?>" name="email" type="email" autofocus>
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_EMAIL']; ?>" name="email" type="email" autofocus required>
                             </div> 
     <! --------password ------ -->
                             <div class="form-group">
-                                <input class="form-control" placeholder="<?php echo $lang['INFO_PASSWORD']; ?>" name="password" type="password" value="">
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_PASSWORD']; ?>" name="password" type="password" value="" required>
                             </div>
    <! --------confirm_password ------ -->
                             <div class="form-group">
-                                <input class="form-control" placeholder="<?php echo $lang['INFO_CONFIRM_PASSWORD']; ?>" name="confirm_password" type="password" value="">
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_CONFIRM_PASSWORD']; ?>" name="confirm_password" type="password" value="" required>
                             </div>
 
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="<?php echo $lang['MENU_REGISTER']; ?>" name="register" >

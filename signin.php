@@ -38,7 +38,7 @@ include_once 'common.php';
                             </div>
 
 
-                                <input class="btn btn-lg btn-success btn-block" type="submit" value="login" name="login"  >
+                                <input class="btn btn-lg btn-success btn-block" type="submit" value="<?php echo $lang['MENU_LOGIN']; ?>" name="login"  >
 
                             <!-- Change this to a button or input when using this as a form -->
                           <!--  <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a> -->
