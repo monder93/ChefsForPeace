@@ -37,7 +37,7 @@ Please visit our wiki for furthur project info:
 - [Iteration 2 - MAE](https://github.com/monder93/ChefsForPeace/wiki/Iteration-2---MAE)
 - [Iteration 3 - NGM](https://github.com/monder93/ChefsForPeace/wiki/Iteration-3---NGM)
 - [Iteration 4 - CSC](https://github.com/monder93/ChefsForPeace/wiki/Iteration-4---CSC)
-- [final Iteration - FINAL](https://github.com/monder93/ChefsForPeace/wiki/Iteration-5---FINAL)
+- [final Iteration - FINAL](https://github.com/monder93/ChefsForPeace/wiki/FINAL-ITERATION)
 
 
 
