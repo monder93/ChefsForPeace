@@ -1,24 +1,67 @@
+<!DOCTYPE html>
+
+ 
+ <head>
+ 
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+     <meta name="author" content="">
+ 
+     <!-- jQuery -->
+     <script src="js/jquery.js"></script>
+ 
+     <!-- Bootstrap Core JavaScript -->
+     <script src="js/bootstrap.min.js"></script>
+ 
+     <!-- Bootstrap Core CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+     <!-- Custom CSS -->
+     <link href="css/business-frontpage.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet" rel="stylesheet">
+
+ </head>
 <?php
-# Fill our vars and run on cli
-# $ php -f db-connect-test.php
-$dbname = 'chefsforpeace';
-$dbuser = 'root';
-$dbpass = '';
-$dbhost = 'localhost';
-$dbtable = 'users';
+
+if (isset($_POST['caption']) && (!empty($_POST['caption']))) {
+	$fn = $_POST['caption'];
+	echo "caption: ".$fn."<br>";
+}
+
+if (isset($_POST['toDel[]'])) {
+	echo "Isset <br>";
+	$toDel = $_POST['toDel[]'];
+	if (!empty($toDel)) {
+		echo "not empty<br>";
+		foreach ($toDel as $d) {
+			echo "id to del: ".$d."<br>";
+		}
+	}
+}
 
 
-$connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die("Unable to Connect to '$dbhost'");
-mysqli_select_db($connect,$dbtable) or die("Could not open the db '$dbname'");
-$test_query = "SHOW TABLES FROM $dbname";
-$result = mysql_query($test_query);
-$tblCnt = 0;
-while($tbl = mysql_fetch_array($result)) {
-  $tblCnt++;
-  #echo $tbl[0]."<br />\n";
+?>
+<form role="form" action="test.php" method="POST">
+<?php
+for ($i = 0; $i < 5; $i++) {
+	?>
+
+		<form role="form" action="test.php" method="POST">
+			<input type="text" name="caption" value="<?php echo $i;  ?>">
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		<input type="checkbox" name="toDel[]" value="<?php echo $i; ?>">
+
+	
+
+
+
+	<?php 
 }
-if (!$tblCnt) {
-  echo "There are no tables<br />\n";
-} else {
-  echo "There are $tblCnt tables<br />\n";
-}
+?>
+<input type="submit" name="del" value="Delete selected" />
+	
+</form>
+</html>

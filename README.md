@@ -19,7 +19,7 @@ This project is developed as part of the requirements for a [software engineerin
 
 Please visit our wiki for furthur project info: 
 
-### [User Manual](https://github.com/monder93/ChefsForPeace/wiki/user-manual)
+### [User Manual](../../wiki/user-manual) (empty)
 
 ### [Team Page](../../wiki/team)
 
@@ -32,12 +32,11 @@ Please visit our wiki for furthur project info:
 - [Software Design Specification](../../wiki/sds)
 
 ### Iteration Pages
-- [Iteration 0 - ZFR](https://github.com/monder93/ChefsForPeace/wiki/Iteration-0---ZFR)
-- [Iteration 1 - MVP](https://github.com/monder93/ChefsForPeace/wiki/Iteration-1---MVP)
-- [Iteration 2 - MAE](https://github.com/monder93/ChefsForPeace/wiki/Iteration-2---MAE)
-- [Iteration 3 - NGM](https://github.com/monder93/ChefsForPeace/wiki/Iteration-3---NGM)
-- [Iteration 4 - CSC](https://github.com/monder93/ChefsForPeace/wiki/Iteration-4---CSC)
-- [final Iteration - FINAL](https://github.com/monder93/ChefsForPeace/wiki/FINAL-ITERATION)
+- [Iteration 0 - ZFR](../../wiki/iter0-zfr)
+- [Iteration 1 - MVP]()
+- [Iteration 2 - Feature X]()
+- [Iteration 3 - Feature Y]()
+- [Iteration 4 - Feature Z]()
 
 
 

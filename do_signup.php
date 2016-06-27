@@ -13,7 +13,7 @@ if(isset($_POST['register']))
  $Email=$_POST['email'];
  $Password=$_POST['password'];
  $Confirm_Password=$_POST['confirm_password'];
-
+ $Phone=$_POST['phone'];
 
  // test to check inputs 
 
@@ -35,6 +35,11 @@ exit();
         echo"<script>alert('Please enter the email')</script>";
 exit();
     }
+    if($Phone=='') 
+    {
+        echo"<script>alert('Please enter the phone')</script>";
+exit();
+    }
     if($Password=='')
      {
                echo"<script>alert('Please enter the password')</script>";
@@ -46,8 +51,11 @@ exit();
 exit();
      }  
       if($Password!=$Confirm_Password)
-     {
-               echo"<script>alert('please use same password in password and confirm password')</script>";
+      {
+               echo"<script>alert('please use same password in pass
+     {word and confirm password')</script>";
+                       echo"<script>window.open('fail.php','_self')</script>"; 
+
 exit();
      }
 
@@ -57,26 +65,32 @@ exit();
     if ($run_query=mysqli_query($dbcon,$check_email_query))
     {
        if(mysqli_num_rows($run_query)>0)  // if result>0 then there is email registered and cant register again 
-    {
+        {
     echo "<script>alert('Email $Email is already exist in our database, Please try another one!')</script>";
             echo"<script>window.open('fail.php','_self')</script>";
 exit();
+        }
     }
-}
 
 //insert the user into the database.
-    $insert_user="insert into users (First_Name,Last_Name,Email,Password) VALUE ('$First_Name','$Last_Name','$Email','$Password')";
+    $insert_user="insert into users (First_Name,Last_Name,Email,Password,Phone) VALUE ('$First_Name','$Last_Name','$Email','$Password','$Phone')";
     if(mysqli_query($dbcon,$insert_user))
     {
         $message = "Registration Successfull";
         echo "<script type='text/javascript'>alert('$message');</script>";
-        echo"<script>window.open('view_users.php','_self')</script>";
+        echo"<script>window.open('success.php','_self')</script>";
 
+    }
+    else
+    {
+        $message = "Registration failed";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+        echo"<script>window.open('fail.php','_self')</script>"; 
     }
 
 }
 
-
+ mysqli_close($dbcon);
 
 ?>
 

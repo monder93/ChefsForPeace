@@ -37,6 +37,10 @@ include_once 'common.php';
                             <div class="form-group">
                                 <input class="form-control" placeholder="<?php echo $lang['INFO_EMAIL']; ?>" name="email" type="email" autofocus required>
                             </div> 
+    <! --------Phone ------ -->
+                            <div class="form-group">
+                                <input class="form-control" placeholder="<?php echo $lang['INFO_PHONE']; ?>" name="phone" type="number"  autofocus required>
+                            </div> 
     <! --------password ------ -->
                             <div class="form-group">
                                 <input class="form-control" placeholder="<?php echo $lang['INFO_PASSWORD']; ?>" name="password" type="password" value="" required>

@@ -1,6 +1,6 @@
 
 body .custom-container {
-    background: #EBF7EB;
+    background: #E4F7E4;
     margin: 15px 5px;
     padding: 5px;
     border: 1px solid #A8B5AE;
@@ -12,7 +12,9 @@ body .custom-container {
 .custom-container h1, .custom-container h2{
 	margin: 0px;
 	color: #304530;
+	/*
 	font-family: cursive;
+	*/
 }
 
 
@@ -94,3 +96,52 @@ body .custom-container {
 .events-container {
 	text-align: center;
 }
+
+.profile-container {
+	
+}
+
+.profile-picture {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+/*
+.chef-picture {
+	
+	width: 200px;
+	text-align: center;
+
+    height: 200px;
+    overflow: hidden;
+
+}
+*/
+.chef-picture img {
+ 	
+    height: 165px;
+    width: 330px;
+}
+
+.chef-name {
+	text-align: center;
+}
+
+.img-thumb {
+	
+	width: 250px; 
+	height: 175px;
+	margin-bottom: 7px;
+}
+
+.events-custom-container {
+	border: 1px solid gray;
+	margin-bottom: 2px;
+}
+
+.events-custom-container:hover {
+	background-color: #c6ff6a;
+}
+
+

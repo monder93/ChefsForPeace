@@ -17,13 +17,13 @@ app.config(function($routeProvider){$routeProvider
     templateUrl: "home.php"})
 	
 .when('/about', {
-    templateUrl: "about.html"})
+    templateUrl: "about.php"})
 	
 .when('/contact', {
     templateUrl: "contact.php"})
 	
 .when('/gallery', {
-    templateUrl: "gallery.html"})
+    templateUrl: "gallery.php"})
 	
 .when('/signin', {
     templateUrl: "signin.php"})
@@ -32,9 +32,16 @@ app.config(function($routeProvider){$routeProvider
     templateUrl: "registration.php"})	
 
 .when('/events', {
-    templateUrl: "events.html"})	
+    templateUrl: "events.php"})	
+.when('/profilepage',{
+    templateUrl: "profilepage.php"})
+.when('/chefs',{
+    templateUrl: "chefs.php"})
+.when('/comments',{
+    templateUrl: "comments.php"})
 .otherwise({
     templateUrl: "home.php"})
+
 	
 });
 

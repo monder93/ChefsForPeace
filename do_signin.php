@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include("database/db_conection.php");
 
 if(isset($_POST['login']))
@@ -24,9 +24,18 @@ exit();
     
         if(mysqli_num_rows($run))
     {
-        echo "<script>window.open('success.php','_self')</script>";
+        $row=mysqli_fetch_array($run);
+        $_SESSION['user_id']=$row['ID'];//here session is used and value of Email store in $_SESSION.
+        $_SESSION['firstname']=$row['First_Name'];//here session is used and value of Email store in $_SESSION.
+        $_SESSION['lastname']=$row['Last_Name'];//here session is used and value of Email store in $_SESSION.
+        $_SESSION['phone']=$row['Phone'];//here session is used and value of Email store in $_SESSION.
+        $_SESSION['email']=$row['Email'];//here session is used and value of Email store in $_SESSION.
+        $_SESSION['password']=$row['Password'];//here session is used and value of Email store in $_SESSION.
+        $_SESSION['type']=$row['Type'];//here session is used and value of Email store in $_SESSION.
 
-        $_SESSION['email']=$user_email;//here session is used and value of $user_email store in $_SESSION.
+
+        echo "<script>window.open('index.php','_self')</script>";
+
 
     }
     else
@@ -38,4 +47,6 @@ exit();
     }
 
 }
-?>
+
+
+?> 

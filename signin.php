@@ -1,5 +1,8 @@
 <?php
 include_once 'common.php';
+
+
+
 ?>
 
 
@@ -12,7 +15,7 @@ include_once 'common.php';
 </head>
 <style>
     .login-panel {
-        margin-top: 75px;
+        margin-top: 5px;
 
 </style>
 
